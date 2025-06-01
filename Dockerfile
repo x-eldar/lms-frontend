@@ -13,7 +13,8 @@ COPY . .
 
 # Определяем переменные окружения
 ARG VITE_BACKEND_URL
-ENV VITE_BACKEND_URL=$VITE_BACKEND_URL
+ARG VITE_ALLOWED_HOST
+
 ENV NODE_ENV=development
 
 # Открываем порт и запускаем dev-сервер
